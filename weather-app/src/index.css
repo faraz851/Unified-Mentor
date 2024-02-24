@@ -1,0 +1,225 @@
+/* Global styling for the body */
+body {
+  background-image: linear-gradient(
+      rgba(59, 59, 59, 0.63),
+      rgba(26, 33, 30, 0.65)
+    ),
+    url("./assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  min-height: 692px;
+
+}
+
+/* Navigation bar styling */
+#nav {
+  height: 100px;
+  background-color: rgba(253, 250, 250, 0.1);
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Logo styling */
+#logo {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 260px;
+  z-index: -1;
+}
+
+/* Name styling */
+#name {
+  position: absolute;
+  left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+}
+
+/* Search input styling */
+#inputBox {
+  position: absolute;
+  right: 100px;
+  height: 50px;
+  width: 300px;
+  padding-left: 20px;
+  margin-top: 30px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 40px;
+}
+
+/* Search button styling */
+#searchBtn {
+  position: absolute;
+  right: 30px;
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+/* Search button image styling */
+#searchBtn img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+/* Main data container styling */
+#data {
+  height: 300px;
+  margin-right: 20px;
+  border-radius: 25px;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+/* Weather information container styling */
+#weather {
+  width: 25%;
+  background-color: rgb(75, 75, 75, 0.6);
+  margin: 10px;
+  padding-left: 20px;
+  border-radius: 20px;
+  display: inline-table;
+
+}
+
+/* General styling for h2 elements */
+h2 {
+  color: white;
+}
+
+/* Details container styling */
+#details {
+  width: 25%;
+  background-color: rgb(75, 75, 75, 0.6);
+  margin: 10px;
+  padding-left: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Weather image styling */
+#weatherImg {
+  display: inline-block;
+}
+
+/* Additional weather information container styling */
+#weatherdata2 {
+  width: 25%;
+  background-color: rgb(75, 75, 75, 0.6);
+  margin: 10px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  display: inline-table;
+}
+
+/* Footer styling */
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 1rem;
+  background-color: rgba(253, 250, 250, 0.1);
+  text-align: center;
+}
+
+/* Media query for screens with a maximum width of 600px (mobile) */
+@media (max-width: 800px) {
+  #nav {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  /* Hide logo and name on mobile */
+  #logo,
+  #name {
+    display: none;
+  }
+
+  /* Adjust search input width and position on mobile */
+  #inputBox {
+    width: 60%;
+    position: absolute;
+    right: 70px;
+  }
+
+  /* Center the search button on mobile */
+  #searchBtn {
+    position: absolute;
+    right: 10px;
+  }
+
+  /* Adjust data container for mobile layout */
+  #data {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Adjust details container width and background for mobile */
+  #details {
+    width: 90%;
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  /* Adjust weather image size for mobile */
+  #weatherImg {
+    width: 150px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  /* Adjust width and font size for weather containers on mobile */
+  #weather,
+  #weatherdata2 {
+    width: 90%;
+    margin: 10px 0;
+    font-size: 10px;
+  }
+
+  /* Adjust margin to separate the footer from the content on mobile */
+  #footer {
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0px;
+  }
+}
+@media (max-width: 800px) {
+ 
+
+  /* Hide logo and name on mobile */
+  #logo,
+  #name {
+    display: none;
+  }
+}
+@media (max-width: 1300px) {
+ 
+
+  body {
+
+    overflow-y: scroll;
+  }
+}
